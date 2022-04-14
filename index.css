@@ -1,0 +1,575 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-image: url("./images/shape.svg");
+  background-repeat: no-repeat;
+  background-position: right top, left top;
+  font-weight: 400;
+}
+
+nav {
+  background: rgb(92, 209, 14);
+  height: 80px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+label.logo {
+  color: white;
+  font-size: 1.5rem;
+  line-height: 80px;
+  font-weight: 400;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.contrain {
+  max-width: 90%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+input[type="text"] {
+  width: 30%;
+  margin-left: 3em;
+  padding: 10px;
+  border: none;
+}
+
+.searchbtn {
+  background-color: rgb(0, 128, 38);
+  padding: 10px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  font-weight: 300;
+}
+
+nav ul li a:hover {
+  background-color: white;
+  color: rgb(92, 209, 14);
+}
+
+.checkbtn {
+  font-size: 2.5rem;
+  color: white;
+  float: right;
+  line-height: 70px;
+  margin-right: 1rem;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Verdana, sans-serif;
+}
+.mySlides {
+  display: none;
+}
+img {
+  vertical-align: middle;
+}
+
+.slideshow-container {
+  margin: 2em auto;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1em;
+  max-width: 90%;
+  width: 100%;
+  margin: 2em auto;
+}
+
+.text {
+  margin: 1em;
+}
+
+.text h1 {
+  color: rgb(92, 209, 14);
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.text h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.text h3 {
+  font-size: .9rem;
+  font-weight: 300;
+  margin-top: 10px;
+}
+
+.image img {
+  position: none;
+}
+
+.hero-button {
+  background-color: rgb(0, 128, 38);
+  padding: 10px;
+  width: 100px;
+  border: none;
+  font-weight:  500;
+  border-radius: 4px;
+  color: white;
+  margin-top: 1em;
+  cursor: pointer;
+}
+
+.hero-button:hover {
+  background-color: rgb(92, 209, 14);
+  transition: 0.3s ease-in;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#categories {
+  margin-top: 1em;
+  padding: 1px;
+}
+
+.container h1 {
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.4rem;
+  margin-top: 1em;
+}
+
+.container {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.shoecard {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 1em;
+  max-width: 90%;
+  width: 100%;
+  padding: 1em;
+  margin: 2em auto;
+}
+
+.card {
+  /* border: 1px solid rgba(0, 0, 0, 0.303); */
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(12, 10, 10, 0.231);
+}
+
+.card img {
+  width: 100%;
+}
+
+.card button {
+  background-color: rgb(0, 128, 38);
+  padding: 1em ;
+  width: 90%;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  margin-top: 1em;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.card button:hover {
+  background-color: rgb(92, 209, 14);
+  transition: 0.3 ease-in;
+}
+
+.shoecard h1 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 10px;
+}
+
+.shoecard h2 {
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin: 10px;
+}
+
+.shoecard h3 {
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin: 10px;
+}
+
+#blog {
+  padding: 1px;
+}
+
+.fashion-trend h1 {
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 300;
+  margin-top: 2em;
+}
+
+.fashion-trend h2 {
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.fashion-trend h3 {
+  font-size: 0.8rem;
+  text-decoration: underline;
+  margin-top: 5px;
+}
+
+.fashion-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 90%;
+  width: 100%;
+  margin: 2em auto;
+}
+
+.card-images img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.sub-div {
+  max-width: 90%;
+  width: 100%;
+  margin: 1em auto;
+}
+
+#delivery-section{
+  padding:10px;
+}
+
+.delivery-section{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1em;
+  max-width: 100%;
+  width: 80%;
+  margin: 3em auto;
+}
+
+.section h1{
+  font-size: 2rem;
+  font-weight: 400;
+  margin-top: 2em;
+}
+
+.section-image img{
+  width: 100%;
+}
+
+.image1{
+  margin-top: 2em;
+}
+
+.image2{
+  margin-top:1em;
+}
+
+.image1 img{
+  width: 10%;
+}
+
+.image2 img{
+  width: 10%;
+  margin-left: -10px;
+}
+
+.delivery-button{
+  background-color: rgb(0, 128, 38);
+  padding: 1em ;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  margin-top: 1em;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.delivery-button:hover{
+  background-color: rgb(92, 209, 14);
+  transition: 0.3 ease-in;
+}
+
+.footer{
+  background-color:rgb(92, 209, 14);
+  padding: 1px;
+}
+
+.footer-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  max-width: 100%;
+  width: 80%;
+  margin: 3em auto;
+  color: white;
+  padding: 10px;
+  border-bottom: 1px solid white;
+}
+
+.col-1  h1{
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.col-1 h2{
+  font-size: .8rem;
+  font-weight: 300;
+  margin-top: 1em;
+}
+
+.col-1 ul{
+  display:flex;
+}
+
+.col-1 ul li{
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.col-1 ul li a{
+  font-size: 30px;
+  color: white;
+  font-weight: 200;
+}
+
+.col-1 ul li a:hover{
+  color: rgb(0, 128, 38);
+}
+
+.col-2  h1{
+  font-size: 1.5rem;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+
+.col-2 .list{
+  display:block;
+}
+
+.col-2 .list li{
+  padding: 2px;
+}
+
+.col-2 .list li a{
+  font-size: 16px;
+  color: white;
+}
+
+.newsletter input[type=text]{
+  border-bottom: 2px solid white;
+  border: none;
+  border-radius: 2px;
+  width: 60%;
+  margin-left: 0;
+  margin-top: 10px;
+}
+
+.footer-button{
+  background-color: rgb(0, 128, 38);
+  padding: 10px ;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  margin-top: 1em;
+  cursor: pointer;
+}
+
+.footer-button:hover{
+  background-color: rgba(0, 128, 0, 0.568);
+  transition: 0.3 ease-in;
+}
+
+.info{
+  max-width: 100%;
+  width:80%;
+  margin: 1em auto;
+}
+
+.info h1{
+  color: white;
+  font-size: .8rem;
+  font-weight: 200;
+  text-align: center;
+}
+
+
+
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 30px;
+  }
+  nav {
+    position: sticky;
+    z-index: 999;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+
+  .contrain input {
+    display: none;
+  }
+
+  .searchbtn {
+    display: none;
+  }
+}
+
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+
+  .fa {
+    font-size: 25px;
+  }
+
+  ul {
+    z-index: 9999;
+    width: 75%;
+    height: 100vh;
+    background: rgb(0, 128, 38);
+    opacity: 0.9;
+    top: 0;
+    position: fixed;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+    border-radius: 0.5rem;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+    width: 100%;
+    margin: 1em auto;
+  }
+
+  .text {
+    margin-top: 1em;
+  }
+
+  .text h1 {
+    font-size: 1rem;
+  }
+
+  .text h2 {
+    font-size: 1.5rem;
+  }
+
+  .shoecard {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .fashion-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .delivery-section{
+    grid-template-columns: 1fr;
+    margin: 1em auto;
+  }
+
+  .section h1{
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+
+  .footer-list{
+    grid-template-columns: 1fr;
+  }
+
+  .col-2{
+    display: none;
+  }
+}
